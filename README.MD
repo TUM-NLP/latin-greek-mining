@@ -2,8 +2,8 @@
 
 ## Content
 
-This project includes the code base used for this paper and additionally publishes its best model:
-(INSERT LINK)
+This project includes the code base used for this paper and additionally publishes its best model DistilSPhilBERTa:
+https://huggingface.co/sebastian-reichbauer/DistilSPhilBERTa
 
 For explanations on how to use the files, look into the relevant subdirectories.
 Here is an overview over the different directories:
@@ -34,4 +34,13 @@ The updated benchmarks with the opensource version of our dataset can be found h
 
 ### Best Model (after knowledge distillation)
 
-(INSERT RESULT AND LINK HERE)
+DistilSPhilBERTa was trained using knowledge distillation with SPhilBERTa as student model and LaBSE as teacher model, using
+English as anchor language.
+English-Greek and English-Latin parallel sentences have been used for training.
+
+| Model name       | F1 Score | 
+|------------------|----------| 
+| LaBSE/SPhilBERTa | 85.4     |
+
+DistilSPhilBERTa can be downloaded at:
+https://huggingface.co/sebastian-reichbauer/DistilSPhilBERTa
