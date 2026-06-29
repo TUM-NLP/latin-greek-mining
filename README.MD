@@ -15,7 +15,6 @@ which is not provided for this Github project. However, the precomputed corpus i
 Therefore, it handles all stuff related to postprocessing already generated embeddings.
 * `training` is used to train models using different methods (parallel sentences or knowledge distillation)
 
-The best performing model from the paper can be found at (INSERT LINK).
 
 ## Benchmarks
 
@@ -37,10 +36,12 @@ The updated benchmarks with the opensource version of our dataset can be found h
 DistilSPhilBERTa was trained using knowledge distillation with SPhilBERTa as student model and LaBSE as teacher model, using
 English as anchor language.
 English-Greek and English-Latin parallel sentences have been used for training.
+It performs already well in its base version, but particularly if whitening is applied to its embeddings.
 
-| Model name       | F1 Score | 
-|------------------|----------| 
-| LaBSE/SPhilBERTa | 85.4     |
+| Model name                                | F1 Score | 
+|-------------------------------------------|----------| 
+| DistilSPhilBERTa                          | 85.4     |
+| DistilSPhilBERTa (with Whitening applied) | 96.5     |
 
 DistilSPhilBERTa can be downloaded at:
 https://huggingface.co/sebastian-reichbauer/DistilSPhilBERTa
