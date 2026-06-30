@@ -2,8 +2,7 @@
 
 ## Content
 
-This project includes the code base used for this paper and additionally publishes its best model DistilSPhilBERTa:
-https://huggingface.co/sebastian-reichbauer/DistilSPhilBERTa
+This project includes the code base used for our [paper](https://aclanthology.org/2026.nlp4dh-1.11/) and additionally publishes its best model [DistilSPhilBERTa](https://huggingface.co/sebastian-reichbauer/DistilSPhilBERTa).
 
 For explanations on how to use the files, look into the relevant subdirectories.
 Here is an overview over the different directories:
